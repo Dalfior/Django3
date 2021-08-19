@@ -1,3 +1,10 @@
 <h1>
     Blog
+    {{ name }}
+
+    <ul>
+    {% for item in lista_tecnologias %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
 </h1>
