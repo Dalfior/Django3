@@ -4,7 +4,19 @@
 
     <ul>
     {% for item in lista_tecnologias %}
-        <li>{{ item }}</li>
+
+        {% if item == 'Django' %}
+            <li><b><i>{{ item }}</i></b></li>
+        {% else %}
+            <li><ol>{{ item }}</ol></li>
+        {% endif %}
+
     {% endfor %}
     </ul>
+
+    <ol>
+    {% for item in lista_tecnologias %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ol>
 </h1>
