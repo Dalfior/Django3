@@ -19,7 +19,7 @@ class Post(models.Model):
         return self.title
 
     def full_name(self):
-        return self.title + self.sub_title
+        return self.title + " " + self.sub_title
 
     full_name.admin_order_field = 'title'
 
